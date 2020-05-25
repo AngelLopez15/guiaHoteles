@@ -1,0 +1,16 @@
+{
+  "name": "cursobootstrap",
+  "version": "1.0.0",
+  "description": "curso bootstrap de la especializadad diseño web fullstack\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://AOLopezCruz@bitbucket.org/AOLopezCruz/cursobootstrap.git"
+  },
+  "author": "Angel Lopez",
+  "license": "ISC",
+  "homepage": "https://bitbucket.org/AOLopezCruz/cursobootstrap#readme"
+}
