@@ -4,6 +4,7 @@
   "description": "curso bootstrap de la especializadad diseño web fullstack\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[",
   "main": "index.html",
   "scripts": {
+    "dev": "lite-server",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -12,5 +13,8 @@
   },
   "author": "Angel Lopez",
   "license": "ISC",
-  "homepage": "https://bitbucket.org/AOLopezCruz/cursobootstrap#readme"
+  "homepage": "https://bitbucket.org/AOLopezCruz/cursobootstrap#readme",
+  "devDependencies": {
+    "lite-server": "^2.5.4"
+  }
 }
