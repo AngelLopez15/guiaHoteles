@@ -9,11 +9,20 @@ body{
     color: #294D4A;
 }
 
+.icono{
+    margin-left: 5px;
+    font-size: 20px;
+}
+
 footer{
     padding: 10px;
     background: #9888A5;
     margin-bottom: 0px;
     margin-top: 20px;
+}
+
+footer .direccion{
+    color: #ffffff;
 }
 
 .card-hotel{
