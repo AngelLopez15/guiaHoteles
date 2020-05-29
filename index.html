@@ -12,6 +12,41 @@
     texto aleatorio para llenar parrafos y tambien lo use en algunos titulos
     esto debido a que me cuesta trabajo invetar textos.-->
     <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+            <div class="container">
+                <a href="#" class="navbar-brand">Menu</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Menu de Navegacion">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbar">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                            <a href="index.html" class="nav-link">Inicio<span class="sr-only">(Actual)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="nosotros.html" class="nav-link">Nosotros</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" id="menu-categorias" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Precios
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="menu-categorias">
+                                <a href="#" class="dropdown-item">HTML</a>
+                                <a href="#" class="dropdown-item">CSS</a>
+                                <a href="#" class="dropdown-item">JS</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Contacto</a>
+                        </li>
+                    </ul>
+                    <form action="" class="form-inline my-2 my-lg-0">
+                        <input type="text" class="form-control mr-sm-2" placeholder="Buscar" arial-label="Buscar">
+                        <button class="btn btn-primary my-s my-sm-0" type="submit">Buscar</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
         <div class="jumbotron jumbotron-fluid">
             <div class="container">
                 <h1 class="display-4">Hoteles</h1>
@@ -21,6 +56,11 @@
         </div>
     </header>
     <main class="container">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item active" aria-current="page">Inicio</li>
+            </ol>
+        </nav>
         <div class="row">
             <div class="col-12 col-md-4">
                 <p class="h3">Architecto</p>
@@ -96,7 +136,7 @@
 
     <footer class="container">
         <div class="row">
-            <div class="col-md-4 d-flex flex-column align-items-start">
+            <div class="col-md-4 d-flex flex-column align-items-center">
                 <a href="#">Facebook</a>
                 <a href="#">Twitter</a>
                 <a href="#">Instagram</a>
@@ -106,7 +146,7 @@
                     <p>741 Nils Route 4146 Port Camillefort Jersey New York</p>
                 </address>
             </div>
-            <div class="col-md-4 d-flex flex-column align-items-end">
+            <div class="col-md-4 d-flex flex-column align-items-center">
                 <a href="#">Nosotros</a>
                 <a href="#">Terminos y condiciones</a>
                 <a href="#">Contacto</a>

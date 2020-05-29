@@ -1,3 +1,9 @@
+body{
+    padding-top: 54px;
+}
+.h3{
+    text-align: center;
+}
 .jumbotron{
     background: #A799B7;
     color: #294D4A;
