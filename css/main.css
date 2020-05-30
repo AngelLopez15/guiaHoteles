@@ -5,8 +5,18 @@ body{
     text-align: center;
 }
 .jumbotron{
-    background: #A799B7;
-    color: #294D4A;
+    background: url('../img/bgheader.jpg') #A799B7;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center 0;
+    color: #000000;
+    padding: 150px 0;
+}
+.footer-card{
+    text-align: center;
+}
+.slogan{
+    color: #ffffff;
 }
 
 .icono{
