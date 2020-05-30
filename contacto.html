@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nosotros</title>
+    <title>Contacto</title>
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="node_modules/open-iconic/font/css/open-iconic-bootstrap.min.css">
@@ -22,7 +22,7 @@
                             <a href="index.html" class="nav-link">Inicio<span class="sr-only">(Actual)</span></a>
                         </li>
                         <li class="nav-item">
-                            <a href="nosotros.html" class="nav-link active">Nosotros</a>
+                            <a href="nosotros.html" class="nav-link">Nosotros</a>
                         </li>
                         <li class="nav-item dropdown">
                             <a href="precios.html" class="nav-link dropdown-toggle" id="menu-categorias" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -35,7 +35,7 @@
                             </div>
                         </li>
                         <li class="nav-item">
-                            <a href="contacto.html" class="nav-link">Contacto</a>
+                            <a href="contacto.html" class="nav-link active">Contacto</a>
                         </li>
                     </ul>
                     <form action="" class="form-inline my-2 my-lg-0">
@@ -57,24 +57,67 @@
         <nav aria-label="breadcrumb">
             <ol class="breadcrumb">
                 <li class="breadcrumb-item"><a href="index.html">Inicio</a></li>
-                <li class="breadcrumb-item active" aria-current="page">Nosotros</li>
+                <li class="breadcrumb-item active" aria-current="page">Contacto</li>
             </ol>
         </nav>
+        <!-- FORMULARIO -->
         <div class="row">
-            <div class="col-12">
-                <p class="h3">Nosotros</p>
-                <p class="mt-4">
-                    Ab fuga debitis dolor libero qui occaecati. In ut sequi nulla ex esse. Assumenda culpa repellat qui dolorum eum. Reprehenderit voluptas dolor placeat soluta optio sint at non quibusdam.
-                    Ducimus qui delectus. Fugit voluptatem voluptatem consequatur repudiandae sapiente dolor delectus itaque laboriosam. Neque blanditiis excepturi ut. Velit id voluptatum perferendis qui eos. Sint nam et corrupti in placeat.
-                    Minus doloribus blanditiis corrupti dolores. Minus laborum ab porro placeat vel omnis officiis. Eligendi ut consequuntur magnam consequatur hic accusamus quos consequatur aut.
-                </p>
-                <p>
-                    Eum praesentium voluptatem non quas iure facere vero illo. Quaerat repellat in et ducimus doloremque nemo placeat facere est. Aut ut quas nostrum sequi ut doloribus. Tenetur ex ut. Fugiat et nesciunt consequatur aut et debitis facilis.
-                    Quibusdam fugit consectetur est hic dolores iusto aspernatur. Quis deserunt molestiae non illo ut nesciunt reiciendis consectetur nostrum. Quia non qui.
-                    Qui eaque dolorem nulla est. Esse iste laboriosam non et architecto. Veniam nam quidem aliquid possimus sit ad. Voluptatem hic ut beatae consequatur aspernatur rerum quia. In voluptas provident.
-                </p>
-            </div>
-        </div>
+			<div class="col">
+				<form action="">
+					<div class="form-group row">
+						<div class="col-12 col-md-6 mb-3">
+							<label for="nombre">Nombre</label>
+							<input type="text" class="form-control" placeholder="Nombre" name="nombre" id="nombre">
+						</div>
+						<div class="col-12 col-md-6 mb-3">
+							<label for="nombre">Apellido</label>
+							<input type="text" class="form-control" placeholder="Apellido" name="apellido" id="apellido">
+						</div>
+					</div>
+                    <div class="form-group row">
+                        <div class="col">
+                            <label for="email">Email</label>
+                            <input type="email" class="form-control" id="email" placeholder="ingrese su mail">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <div class="col-12 col-md-9">
+                            <label for="domicilio">Domicilio</label>
+                            <input type="text" class="form-control" id="domicilio" placeholder="Ingrese su domicilio">
+                        </div>
+                        <div class="col-12 col-md-3">
+							<label for="pais">Ciudad</label>
+							<select name="pais" id="pais" class="form-control">
+								<option value="mexico">New Claudtown</option>
+								<option value="espana">North Ethyltown</option>
+                                <option value="colombia">Modestoville</option>
+                                <option value="colombia">Port Audiehaven</option>
+                                <option value="colombia">Darehaven</option>
+							</select>
+						</div>
+                    </div>
+					<div class="form-group row">
+						<div class="col-12 mb-3">
+							<label for="mensaje">Comentario</label>
+							<textarea name="mensaje" id="mensaje" class="form-control" rows="8"></textarea>
+						</div>
+					</div>
+					<div class="form-group row">
+						<div class="col-12 text-center">
+							<label class="form-check-label mb-3">
+								<input type="checkbox" name="terminos" id="terminos" class="form-check-input mr-2 mb-3">Quiero recibir más información
+							</label>
+							<div class="row justify-content-center">
+								<div class="col-12 col-sm-9 col-md-4">
+									<button class="btn btn-primary btn-block" type="submit">Enviar</button>
+								</div>
+							</div>
+						</div>
+					</div>
+
+				</form>
+			</div>
+		</div>
     </main>
 
     <footer class="container">
