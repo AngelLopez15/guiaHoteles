@@ -1,3 +1,14 @@
+// variables
+$fondo:#9888A5;
+$amarillo:#f0e556;
+$rojo:#dd2424;
+$verde:#28db40;
+
+@mixin margenes ($top,$bottom) {
+    margin-top: $top;
+    margin-bottom: $bottom;
+}
+
 body{
     padding-top: 54px;
 }
@@ -7,7 +18,7 @@ body{
 }
 
 .jumbotron{
-    background: url('../img/bgheader.jpg') #A799B7;
+    background: url('../img/bgheader.jpg') $fondo;
     background-size: cover;
     background-attachment: fixed;
     background-position: center 0;
@@ -28,9 +39,8 @@ body{
 
 footer{
     padding: 10px;
-    background: #9888A5;
-    margin-bottom: 0px;
-    margin-top: 20px;
+    background: $fondo;
+    @include margenes(20px,0px);
 }
 
 footer .direccion{
@@ -40,7 +50,7 @@ footer .direccion{
 .card-hotel{
     flex: 1 300px;
     padding: 5px;
-    margin-top: 10px;
+    @include margenes(10px,0);
 }
 
 .btn-reserva, .btn-mostrar{
