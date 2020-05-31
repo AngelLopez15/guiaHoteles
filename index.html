@@ -13,6 +13,37 @@
     texto aleatorio para llenar parrafos y tambien lo use en algunos titulos
     esto debido a que me cuesta trabajo invetar textos.-->
     <!-- 
+        
+    ¡¡¡¡¡¡¡IMPORTANTE!!!!!!!
+    Hola compañer@s que para las practicas de la semana 3 en especial las referentes a
+    los Popovers y Tooltips. Estos componenetes ocupan de Popper para funcionar
+    y a su vez popper necesita de Jquery entonces si instalaron Jquery y Pooper como 
+    en los videos de este curso estos componenetes no les va a funcionar. 
+    Esto es debido a que lamentablemente Bootstrao 4 utiliza versiones de Popper y Jquery 
+    pasadas. Si instalaron como en los videos la version de Popper y Jquery que tienen 
+    no son las versiones con las que Bootstrap funciona.
+
+    Para que puedan hacer la practica pueden hacer dos cosas.
+    1-Ocupar directamente las CND como nos dice la documentacion oficial
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    pero con el riesgo de que los demas compañeros los califiquen mas por no usar la carpeta node_modules
+    
+    2-O si quieren los archivos de forma local pueden entrar a la URL de las versiones especificas
+	https://code.jquery.com/jquery-3.5.1.slim.min.js
+	https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js
+    en su navegador se abrira una pagina con un monton de letras innentendible pero solo es codigo
+    java Script minificado. Denle click derecho en cualquier lugar de la pagina luego en "Guardar como"
+    borren el nombre que les pone por default y escriban jquery.js y popper.js respectivamente.
+    Estos archivos ya son los correctos para que Bootstrap funcione y ya la pueden guardar en la carpeta
+    de Jquery y Popper de la carpeta node_modules. Pueden borrar los demas archivos que tengan esa carpeta
+    y solo dejar lo que acabas de descargar para no confundirte.
+
+    3-Aqui en mi repositorio dejare los archivos popper.js y jquery.js correctos por si no entendiste
+    mi explicacición. Tambien seria bueno que pasaras el este mensaje en el codigo HTML de tu proyecto
+    para avisar a los demas compañeros del curso. Saludos
+    -->
+    <!-- 
         **************************************
         *****Diseño por Angel López*****
         ****Curso de diseño web Bootstrap4****
@@ -125,10 +156,13 @@
         <div class="row mt-3">
 			<div class="col-12 col-md-4">
 				<div class="card">
-					<img src="img/hotel1.jpg" class="card-img-top img-fluid" alt="hotel">
+                    <button type="button" class="btn btn-warning" data-toggle="popover" data-placement="bottom" data-content="Quasi iusto fuga voluptatem in accusantium voluptatem id sed.">
+                        Promociones
+                    </button>
+                    <img src="img/hotel1.jpg" class="card-img-top img-fluid" alt="hotel">
 					<div class="card-body">
-                        <h5 class="card-title">Hotel accusamus</h3>
-                        <h6 class="card-subtitle mb-2 text-muted">Arizona</h4>
+                        <h5 class="card-title" data-toggle="tooltip" data-placement="top" title="El hotel cuenta con id sit illo nihil et eveniet">Hotel accusamus</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">Arizona</h6>
 						<p class="card-text">Sed facere quo et quis nihil numquam consequatur molestiae neque.</p>
                         <button type="button" class="btn btn-primary btn-reserva" data-toggle="modal" data-target="#reservaHotel">
                             Reserva <span class="icono oi oi-credit-card"></span>
@@ -143,10 +177,13 @@
 			</div>
 			<div class="col-12 col-md-4">
 				<div class="card">
+                    <button type="button" class="btn btn-warning" data-toggle="popover" data-placement="bottom" data-content="Quasi iusto fuga voluptatem in accusantium voluptatem id sed.">
+                        Promociones
+                    </button>
 					<img src="img/hotel2.jpg" class="card-img-top img-fluid" alt="hotel">
 					<div class="card-body">
-                        <h5 class="card-title">Hotel qui</h3>
-                        <h6 class="card-subtitle mb-2 text-muted">Iowa</h4>
+                        <h5 class="card-title" data-toggle="tooltip" data-placement="top" title="El hotel cuenta con id sit illo nihil et eveniet">Hotel qui</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">Iowa</h6>
 						<p class="card-text">deserunt soluta corrupti consequatur eos voluptatem error velit aspernatur.</p>
                         <button type="button" class="btn btn-primary btn-reserva" data-toggle="modal" data-target="#reservaHotel">
                             Reserva <span class="icono oi oi-credit-card"></span>
@@ -160,10 +197,13 @@
             </div>
             <div class="col-12 col-md-4">
 				<div class="card">
+                    <button type="button" class="btn btn-warning" data-toggle="popover" data-placement="bottom" data-content="Quasi iusto fuga voluptatem in accusantium voluptatem id sed.">
+                        Promociones
+                    </button>
 					<img src="img/hotel3.jpg" class="card-img-top img-fluid" alt="hotel">
 					<div class="card-body">
-                        <h5 class="card-title">Hotel sed</h3>
-                        <h6 class="card-subtitle mb-2 text-muted">Illinois</h4>
+                        <h5 class="card-title" data-toggle="tooltip" data-placement="top" title="El hotel cuenta con id sit illo nihil et eveniet">Hotel sed</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">Illinois</h6>
 						<p class="card-text">Deleniti quos dolorem. Repellendus sit nam. Suscipit dolores autem optio omnis.</p>
                         <button type="button" class="btn btn-primary btn-reserva" data-toggle="modal" data-target="#reservaHotel">
                             Reserva <span class="icono oi oi-credit-card"></span>
@@ -181,8 +221,8 @@
 				<div class="card">
 					<img src="img/hotel1.jpg" class="card-img-top img-fluid" alt="hotel">
 					<div class="card-body">
-                        <h5 class="card-title">Hotel accusamus</h3>
-                        <h6 class="card-subtitle mb-2 text-muted">Arizona</h4>
+                        <h5 class="card-title">Hotel accusamus</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">Arizona</h6>
 						<p class="card-text">Sed facere quo et quis nihil numquam consequatur molestiae neque.</p>
                         <button type="button" class="btn btn-primary btn-reserva" data-toggle="modal" data-target="#reservaHotel">
                             Reserva <span class="icono oi oi-credit-card"></span>
@@ -198,8 +238,8 @@
 				<div class="card">
 					<img src="img/hotel2.jpg" class="card-img-top img-fluid" alt="hotel">
 					<div class="card-body">
-                        <h5 class="card-title">Hotel qui</h3>
-                        <h6 class="card-subtitle mb-2 text-muted">Iowa</h4>
+                        <h5 class="card-title">Hotel qui</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">Iowa</h6>
 						<p class="card-text">deserunt soluta corrupti consequatur eos voluptatem error velit aspernatur.</p>
                         <button type="button" class="btn btn-primary btn-reserva" data-toggle="modal" data-target="#reservaHotel">
                             Reserva <span class="icono oi oi-credit-card"></span>
@@ -215,8 +255,8 @@
 				<div class="card">
 					<img src="img/hotel3.jpg" class="card-img-top img-fluid" alt="hotel">
 					<div class="card-body">
-                        <h5 class="card-title">Hotel sed</h3>
-                        <h6 class="card-subtitle mb-2 text-muted">Illinois</h4>
+                        <h5 class="card-title">Hotel sed</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">Illinois</h6>
 						<p class="card-text">Deleniti quos dolorem. Repellendus sit nam. Suscipit dolores autem optio omnis.</p>
                         <button type="button" class="btn btn-primary btn-reserva" data-toggle="modal" data-target="#reservaHotel">
                             Reserva <span class="icono oi oi-credit-card"></span>
@@ -234,8 +274,8 @@
 				<div class="card">
 					<img src="img/hotel1.jpg" class="card-img-top img-fluid" alt="hotel">
 					<div class="card-body">
-                        <h5 class="card-title">Hotel accusamus</h3>
-                        <h6 class="card-subtitle mb-2 text-muted">Arizona</h4>
+                        <h5 class="card-title">Hotel accusamus</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">Arizona</h6>
 						<p class="card-text">Sed facere quo et quis nihil numquam consequatur molestiae neque.</p>
                         <button type="button" class="btn btn-primary btn-reserva" data-toggle="modal" data-target="#reservaHotel">
                             Reserva <span class="icono oi oi-credit-card"></span>
@@ -251,8 +291,8 @@
 				<div class="card">
 					<img src="img/hotel2.jpg" class="card-img-top img-fluid" alt="hotel">
 					<div class="card-body">
-                        <h5 class="card-title">Hotel qui</h3>
-                        <h6 class="card-subtitle mb-2 text-muted">Iowa</h4>
+                        <h5 class="card-title">Hotel qui</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">Iowa</h6>
 						<p class="card-text">deserunt soluta corrupti consequatur eos voluptatem error velit aspernatur.</p>
                         <button type="button" class="btn btn-primary btn-reserva" data-toggle="modal" data-target="#reservaHotel">
                             Reserva <span class="icono oi oi-credit-card"></span>
@@ -268,8 +308,8 @@
 				<div class="card">
 					<img src="img/hotel3.jpg" class="card-img-top img-fluid" alt="hotel">
 					<div class="card-body">
-                        <h5 class="card-title">Hotel sed</h3>
-                        <h6 class="card-subtitle mb-2 text-muted">Illinois</h4>
+                        <h5 class="card-title">Hotel sed</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">Illinois</h6>
 						<p class="card-text">Deleniti quos dolorem. Repellendus sit nam. Suscipit dolores autem optio omnis.</p>
                         <button type="button" class="btn btn-primary btn-reserva" data-toggle="modal" data-target="#reservaHotel">
                             Reserva <span class="icono oi oi-credit-card"></span>
@@ -417,8 +457,9 @@
         </div>
     </footer>
     <!-- scripts -->
-    <script src="node_modules/jquery/dist/jquery-3.5.1.slim.min.js"></script>
-    <script src="node_modules/popper.js/dist/popper.min.js"></script>
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="node_modules/popper.js/dist/popper.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="js/hoteles.js"></script>
 </body>
 </html>
