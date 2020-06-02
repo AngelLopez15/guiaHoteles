@@ -1,8 +1,10 @@
 body {
-  padding-top: 54px; }
+  padding-top: 54px;
+}
 
 .h3 {
-  text-align: center; }
+  text-align: center;
+}
 
 .jumbotron {
   background: url("../img/bgheader.jpg") #9888A5;
@@ -10,36 +12,47 @@ body {
   background-attachment: fixed;
   background-position: center 0;
   color: #000000;
-  padding: 150px 0; }
+  padding: 150px 0;
+}
 
 .footer-card {
-  text-align: center; }
+  text-align: center;
+}
 
 .slogan {
-  color: #ffffff; }
+  color: #ffffff;
+}
 
 .icono {
   margin-left: 5px;
-  font-size: 20px; }
+  font-size: 20px;
+}
 
 footer {
   padding: 10px;
   background: #9888A5;
   margin-top: 20px;
-  margin-bottom: 0px; }
+  margin-bottom: 0px;
+}
 
 footer .direccion {
-  color: #ffffff; }
+  color: #ffffff;
+}
 
 .card-hotel {
   flex: 1 300px;
   padding: 5px;
   margin-top: 10px;
-  margin-bottom: 0; }
+  margin-bottom: 0;
+}
 
 .btn-reserva, .btn-mostrar {
-  width: 100%; }
+  width: 100%;
+}
 
 footer a {
   text-decoration: none;
-  color: #ffffff; }
+  color: #ffffff;
+}
+
+/*# sourceMappingURL=styles.css.map */

@@ -1,6 +1,8 @@
 Inicio del proyecto
 
 ¡¡¡¡¡¡¡IMPORTANTE!!!!!!!
+
+**********************************************************************************************************
 Hola compañer@s que para las practicas de la semana 3 en especial las referentes a
 los Popovers y Tooltips. Estos componenetes ocupan de Popper para funcionar
 y a su vez popper necesita de Jquery entonces si instalaron Jquery y Pooper como 
@@ -27,8 +29,14 @@ y solo dejar lo que acabas de descargar para no confundirte.
 
 3-Aqui en mi repositorio dejare los archivos popper.js y jquery.js correctos por si no entendiste
 mi explicacición. Tambien seria bueno que pasaras el este mensaje en el codigo HTML de tu proyecto
-para avisar a los demas compañeros del curso. Saludos
- 
+para avisar a los demas compañeros del curso. Saludos 
+************************************************************************************************************
+
+NOTA FINAL: Para la ultima practica ocupe el task runner de Grunt es el unicoque funcioona si se sigue el tutorial ya que Gulp
+	    al parecer cambio su configuracion y ya no sirve como nos enseñan en el video.
+	    Si ocupan Grunt no instalen filerev ni lo referencien en el contenido del gruntfile por que no funciona y no creo
+	    bien los archivos para "dist" si la quietan todo funciona perfectamente.
+
 **************************************
 *****Página hecha por Angel López*****
 ****Curso de diseño web Bootstrap4****
