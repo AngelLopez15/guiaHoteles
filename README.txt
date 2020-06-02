@@ -39,6 +39,7 @@ NOTA FINAL: Para la ultima practica ocupe el task runner de Grunt es el unicoque
 
 **************************************
 *****Página hecha por Angel López*****
+*******Twitter: AO_lopez**************
 ****Curso de diseño web Bootstrap4****
 *De la especialidad de desarrollo web*
 *************Full Stack***************
